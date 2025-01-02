@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Fullscreen Overlay Navigation | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+         <ul>
+            <li><a href="#about">About</a></li>
+              <li><a href="#objectives">Objectives</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+         </ul>
+      </div>
+      <section id="hero" class="hero">
+        <div class="container">
+          <h2>Harnessing Wastewater for Clean Energy</h2>
+          <p>Join us in promoting sustainable energy solutions.</p>
+          <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+      </section>
+    
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About the Project</h2>
+          <p>
+            This project focuses on generating clean energy from wastewater using innovative microbial fuel cell (MFC) technology.
+          </p>
+        </div>
+      </section>
+    
+      <section id="objectives" class="section">
+        <div class="container">
+          <h2>Objectives</h2>
+          <ul>
+            <li>Improve environmental pollution.</li>
+            <li>Produce purified water.</li>
+            <li>Create a new way of electricity generation.</li>
+            <li>Enhance wastewater treatment processes.</li>
+          </ul>
+        </div>
+      </section>
+    
+      <section id="team" class="section">
+        <div class="container">
+          <h2>Meet the Team</h2>
+          <p>
+            A multidisciplinary team of engineers and researchers dedicated to solving energy and wastewater challenges.
+          </p>
+        </div>
+      </section>
+    
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2024 Wastewater & Energy Project. All rights reserved.</p>
+        </div>
+      </footer>
+    
+      <script src="script.js"></script>
+   </body>
+</html>
