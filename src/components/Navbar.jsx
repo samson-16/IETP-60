@@ -1,7 +1,6 @@
-import{ useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +8,7 @@ const Navbar = () => {
   const handleToggle = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-[#318078] text-white sticky top-0 z-50shadow-md py-4 ">
+    <nav className="bg-[#318078] text-white sticky top-0 z-50 shadow-md py-4">
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -21,35 +20,35 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-8">
           <NavLink
             to="/"
-            className="hover:underline"
+            className="hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
             activeClassName="font-semibold underline"
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            className="hover:underline"
+            className="hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
             activeClassName="font-semibold underline"
           >
             About
           </NavLink>
           <NavLink
             to="/technology"
-            className="hover:underline"
+            className="hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
             activeClassName="font-semibold underline"
           >
             Technology
           </NavLink>
           <NavLink
             to="/order"
-            className="hover:underline"
+            className="hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
             activeClassName="font-semibold underline"
           >
             Order
           </NavLink>
           <NavLink
             to="/contact"
-            className="hover:underline"
+            className="hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
             activeClassName="font-semibold underline"
           >
             Contact
@@ -72,7 +71,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 onClick={handleToggle}
-                className="block hover:underline"
+                className="block hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
                 activeClassName="font-semibold underline"
               >
                 Home
@@ -82,7 +81,7 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 onClick={handleToggle}
-                className="block hover:underline"
+                className="block hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
                 activeClassName="font-semibold underline"
               >
                 About
@@ -92,7 +91,7 @@ const Navbar = () => {
               <NavLink
                 to="/technology"
                 onClick={handleToggle}
-                className="block hover:underline"
+                className="block hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
                 activeClassName="font-semibold underline"
               >
                 Technology
@@ -102,7 +101,7 @@ const Navbar = () => {
               <NavLink
                 to="/order"
                 onClick={handleToggle}
-                className="block hover:underline"
+                className="block hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
                 activeClassName="font-semibold underline"
               >
                 Order
@@ -112,7 +111,7 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 onClick={handleToggle}
-                className="block hover:underline"
+                className="block hover:underline hover:scale-110 hover:font-semibold transition-all duration-300"
                 activeClassName="font-semibold underline"
               >
                 Contact
